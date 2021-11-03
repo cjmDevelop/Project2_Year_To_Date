@@ -1,0 +1,26 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    url: jdbc:postgresql://database-1.ciky67sqvyri.us-east-1.rds.amazonaws.com/project2
+    username: javafs
+    password: 09oXbzXRCQsLFhd9KcYH
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  file:
+    name: logs/app.log
+  pattern:
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    org.ex: DEBUG
+    org.hibernate: ERROR
+
+
+angular:
+  url: 'http://localhost:4200'
